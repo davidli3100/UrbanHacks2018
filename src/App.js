@@ -15,6 +15,10 @@ const routing = require("./routing")
 
 var resRoute;
 
+function loadJSON () {
+  
+}
+
 
 var currentPos = {
   lat: 0,
@@ -26,23 +30,6 @@ var currentPos = {
  * traffic lights: https://image.flaticon.com/icons/svg/1167/1167993.svg
  */
 
- //math set up
-// var point = {
-//   pointX: 1,
-//   pointY: 1
-// } 
-
-// var line = {
-//   point1: {
-//     lineOnePtX: -100,
-//     lineOnePtY:1
-//   },
-//   point2: {
-//     lineTwoPtX: 100,
-//     lineTwoPtY:1
-//   }
-// }
-// console.log(math.distance([point.pointX, point.pointY], [line.point1.lineOnePtX, line.point1.lineOnePtY], [line.point2.lineTwoPtX, line.point2.lineTwoPtY]))
 
 function sqr (x) {
   return x * x;
