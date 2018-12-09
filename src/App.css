@@ -30,3 +30,52 @@
     transform: rotate(360deg);
   }
 }
+
+.starting-container, .destination-container {
+  width: 40vw;
+}
+
+.selector-container {
+  width: 40vw;
+  display: inline;
+  margin: auto;
+}
+
+.location-field {
+  /* border-radius: 100px; */
+  border-color: grey;
+ border-style: solid;
+ outline: 0;
+ background: #f2f2f2;
+ width: 100%;
+ border: 0;
+ margin: 0 0 15px;
+ padding: 15px;
+ box-sizing: border-box;
+ font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.submit-btn:hover,.submit-btn:active,.submit-btj:focus {
+  background: #43A047;
+}
+
+.submit-btn {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
