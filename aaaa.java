@@ -15,18 +15,11 @@ public class aaaa {
         System.out.println(l1.getIntersection(l2));
     }
 
-    public static double distFromLine(pair p1, line n){
-        
-        
+    public static double distFromLine(pair pairInDist, line n){
         double m = n.getNr();
-        pair p1s = new pair(100, 100*m);
-        
-        
+        pair pair1 = new pair(100, 100*m);
         line l2 = new line(p1,p1s);
-        pair p2 = n.getIntersection(l2);
-        
-        
-        
+        pair p2 = n.getIntersection(l2);   
         return 
         
     }
