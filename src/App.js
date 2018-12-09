@@ -16,7 +16,7 @@ const routing = require("./routing")
 var resRoute;
 
 function loadJSON () {
-  
+
 }
 
 
