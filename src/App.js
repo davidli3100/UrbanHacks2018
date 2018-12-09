@@ -10,6 +10,9 @@ const {
 } = require("react-google-maps");
 const { compose, withProps, lifecycle } = require("recompose");
 const google = window.google;
+const routing = require("./routing")
+
+var resRoute;
 
 
 var currentPos = {
@@ -46,6 +49,7 @@ const MyMapComponent = compose(
             directions: result,            
           });
           console.log(result)
+          resRoute = result;
         } else {
           console.error(`error fetching directions ${result}`);
         }
@@ -112,9 +116,12 @@ class App extends Component {
   state = {
     isMarkerShown: false,
   }
-
+  
   pathfinder() {
-    
+    resRoute.routes[0].overview_path.forEach(element => {
+      var shit = routing.pair(element.lat, element.lng);
+      
+    });
   }
 
   componentWillMount() {

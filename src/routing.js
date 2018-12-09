@@ -38,7 +38,7 @@
             }
         }
       getYInt(){
-            va m = getSlope();
+            var m = getSlope();
             return - m * p1.x;
         }
         
@@ -94,7 +94,7 @@
 
 
     }
-
+}
 
 let p1,p2,p3,p4;
 p1 = new pair(-1,-1);
