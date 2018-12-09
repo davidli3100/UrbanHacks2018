@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import math from 'mathjs'
 import parser from 'geojson-tools';
 // import logo from './logo.svg';
+import composeState from 'compose-state';
+
 import './App.css';
-import { watchFile } from 'fs';
+import { watchFile, close } from 'fs';
+import { MAP } from 'react-google-maps/lib/constants';
+
 const {
   withScriptjs,
   withGoogleMap,
@@ -13,15 +17,25 @@ const {
   KmlLayer
 } = require("react-google-maps");
 const { compose, withProps, lifecycle } = require("recompose");
+// var firebase = require('firebase');
+
 const google = window.google;
 const fetch = require('node-fetch');
 const routing = require("./routing")
 const https = require('https')
 var polyline = require('polyline')
+const ToKML = require('tokml')
+var GeoJSON = require('geojson');
+// var createFile = require('create-file');
+var fileSystem = require('fs');
 
 var resRoute;
-var routeSegs = {};
+var routeSegs = [];
+var closeLights = [];
+var closeLightsGeo;
+var closeLightsKml;
 var stopLights = require('./Traffic_Signals.json')
+var custState = {};
 
 /**
  * manually get and parse geojson data 
@@ -34,6 +48,21 @@ var currentPos = {
   lat: 43.2557,
   lng: -79.8711
 };
+
+// var config = {
+//   apiKey: "AIzaSyBMTaXD08HK0EqfXcZMIX5Au1Lo_ZwcCeE",
+//   authDomain: "hammermaps-177a3.firebaseapp.com",
+//   databaseURL: "https://hammermaps-177a3.firebaseio.com",
+//   projectId: "hammermaps-177a3",
+//   storageBucket: "hammermaps-177a3.appspot.com",
+//   messagingSenderId: "685736535853"
+// };
+// firebase.initializeApp(config);
+// var storage = firebase.storage();
+// var storageRef = storage.ref()
+// var trafficKmlRef = storageRef.child('traffic.kml')
+
+// var file = closeLightsKml // use the Blob or File API
 
 /**
  * icon pics
@@ -68,7 +97,10 @@ function distToSegment (p, v, w) {
 }
 console.log(distToSegment([0,0], [5,1], [-2,1]))
 
-var MyMapComponent = compose(
+
+
+const MyMapComponent = compose(
+
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
@@ -78,6 +110,21 @@ var MyMapComponent = compose(
   withScriptjs,
   withGoogleMap,
   lifecycle({
+    componentWillMount(){
+      const refs = MAP ? { GoogleMap } : {};
+      this.setState({
+        onMapWillMount: ref => {
+          refs.map = ref;
+          const currentMap = refs.map;
+          (window).googleMapsObject = currentMap.context[MAP];
+          //load the GeoJson to the map
+          refreshDataFromGeoJson(currentMap);
+          //set props.currentMap 
+          this.setState({currentMap: currentMap});
+        }
+      })
+      console.log(custState)
+    },
     componentDidMount() {
       console.log(this.props.origin, this.props.destination)
       var DirectionsService = new google.maps.DirectionsService();
@@ -93,7 +140,7 @@ var MyMapComponent = compose(
           console.log(result);
           resRoute = polyline.decode(result.routes[0].overview_polyline);
           console.log(resRoute);
-          for(var i in resRoute) {
+          for(var i = 0; i < resRoute.length-1; i++) {
             routeSegs.push({
               lat1: resRoute[i][0],
               lng1: resRoute[i][1],
@@ -107,33 +154,55 @@ var MyMapComponent = compose(
           console.error(`error fetching directions ${result}`);
         }
       });
+      
+
     }, 
-    withProps(nextProps) {
-      if(this.props !== nextProps) {
-        this.forceUpdate();
-        console.log('update forced')
-      }
-    }
+
   })
 )((props) => 
   <GoogleMap
     defaultZoom={8} 
     defaultCenter={currentPos}
     center={currentPos}
+    ref={props.onMapWillMount}
     // center={this.props.center}
   >
-  <KmlLayer
-      url="https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.kml"
-      options={{ preserveViewport: true }}
-    />
     {console.log(props.directions)}
     {props.directions && <DirectionsRenderer directions={props.directions} />}
     {props.isMarkerShown && <Marker position={currentPos} onClick={props.onMarkerClick} />}
   </GoogleMap>
 );
 
-function comparePoints() {
-  var bestShit;  
+
+const refreshDataGeo = function (currentMap) {
+  let newData = new google.maps.Data();
+
+      let overlay = newData.addGeoJson(closeLightsGeo);
+
+      newData.setMap(currentMap.context[MAP]);
+}
+
+const refreshDataFromGeoJson = function (currentMap) {
+  if (!currentMap) {
+    return;
+  }
+   // Call the Data class in the initial google map API
+  let newData = new google.maps.Data();
+
+  // Define the GeoJson object
+  try {
+
+    // Call the addGeoJson from the Data class 
+    let newFeatures = newData.addGeoJson(closeLightsGeo)
+    console.log(closeLightsGeo);
+  } catch (error) {
+    console.log(error)
+    newData.setMap(null);
+    return;
+  }
+
+  // Set the data to the current map 
+  newData.setMap(currentMap.context[MAP]);
 }
 
 // class RouteSelector extends Component {
@@ -198,6 +267,7 @@ class App extends Component {
   componentWillMount() {
     this.getGeoLocation()
     console.log(currentPos);
+   
   }
 
   componentDidMount() {
@@ -271,13 +341,48 @@ class App extends Component {
     console.log(currentPos);
   }
 
+
   render() {
-    console.log(this.state)
     const posMarker = {
       position: 'absolute',
       transform: 'translate(-50%, -50%)'
     }
+
+    for(var i =0; i < stopLights.features.length; i++) {
+      for(var j = 0; j < routeSegs.length; j++) {
+        var foobar = distToSegment([stopLights.features[i].properties.LATITUDE, stopLights.features[i].properties.LONGITUDE], [routeSegs[j].lat1, routeSegs[j].lng1], [routeSegs[j].lat2, routeSegs[j].lng2])
+          if(foobar < 0.001) {
+            // console.log(foobar)
+            closeLights.push({
+              lat: stopLights.features[i].properties.LATITUDE,
+              lng: stopLights.features[i].properties.LONGITUDE
+            })
+          } 
+
+          
+        }
+      }
+    closeLightsGeo = GeoJSON.parse(closeLights, {Point: ['lat', 'lng']});
+    closeLightsKml = ToKML(closeLightsGeo);
+    // createFile('./traffic.kml', closeLightsKml, function(err) {
+    // }); 
+
+    // var fileContent = closeLightsKml
+    // var filepath = "./traffic.kml"
+    // fs.writeFile(filepath, fileContent, (err) => {
+    //   if (err) throw err;
+
+    //   console.log('saved')
+    // })
+    // trafficKmlRef.put(fi).then(function(snapshot) {
+    //   console.log('Uploaded traffic!');
+    // });
+    console.log(closeLightsKml);
+    console.log(closeLightsGeo);
+    console.log(closeLights)
+    console.log(this.state)
     console.log(stopLights);
+    
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '100vh', posMarker}}>

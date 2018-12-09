@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="OGRGeoJSON" id="OGRGeoJSON">
+	<SimpleField name="OBJECTID" type="int"></SimpleField>
+	<SimpleField name="PXO_ID" type="string"></SimpleField>
+	<SimpleField name="PXO_TYPE" type="string"></SimpleField>
+	<SimpleField name="LOC_ID" type="string"></SimpleField>
+	<SimpleField name="WARD" type="string"></SimpleField>
+	<SimpleField name="STATUS" type="string"></SimpleField>
+	<SimpleField name="COMMUNITY" type="string"></SimpleField>
+	<SimpleField name="LONGITUDE" type="string"></SimpleField>
+	<SimpleField name="LATITUDE" type="string"></SimpleField>
+</Schema>
+<Folder><name>OGRGeoJSON</name>
+  <Placemark>
+	<description>LIBRARY LANE AT REGIONAL ROAD 56 - SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">21</SimpleData>
+		<SimpleData name="PXO_ID">LIBRARREGRD56_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0027.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.80410310000644</SimpleData>
+		<SimpleData name="LATITUDE">43.122076617265485</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.80410657142383,43.122085088993039</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MOUNTAIN TRANSIT HUB - HSR - NORTH - SOUTHBOUND - PXO </description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">22</SimpleData>
+		<SimpleData name="PXO_ID">MTHUBHSR_N_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0031.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.9018781291657</SimpleData>
+		<SimpleData name="LATITUDE">43.184623986073156</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.901881636955395,43.184632464362082</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MOUNTAIN TRANSIT HUB - HSR - SOUTH - NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">23</SimpleData>
+		<SimpleData name="PXO_ID">MTHUBHSR_S_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0032.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.90210111500365</SimpleData>
+		<SimpleData name="LATITUDE">43.18461134422617</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.902104622862851,43.184619822502441</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HIGHLAND ROAD AT CARLSON ST / SIDNEY CRESCENT - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">24</SimpleData>
+		<SimpleData name="PXO_ID">CARLSOHIGHLA_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0033.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Stoney Creek</SimpleData>
+		<SimpleData name="LONGITUDE">-79.78785586601592</SimpleData>
+		<SimpleData name="LATITUDE">43.184750401502406</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.787859337709278,43.184758885113595</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>KING STREET - 30 EAST OF MILLER'S LANE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">25</SimpleData>
+		<SimpleData name="PXO_ID">KINGMILLER_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0034.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Dundas</SimpleData>
+		<SimpleData name="LONGITUDE">-79.95528984434955</SimpleData>
+		<SimpleData name="LATITUDE">43.26625512561247</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.955293376173202,43.266263615863089</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT MAGNIFICENT WAY - EAST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">26</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEMAGNIF_EL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0052.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81394284903318</SimpleData>
+		<SimpleData name="LATITUDE">43.11851585910299</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.813946323257895,43.118524329741653</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>AMBERLEY BOULEVARD AT WILSON STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">27</SimpleData>
+		<SimpleData name="PXO_ID">AMBERLWILSON_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0078.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.99935888810225</SimpleData>
+		<SimpleData name="LATITUDE">43.209875920668125</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.999362428944764,43.209884398882622</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>EMERALD STREET AT STINSON STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">28</SimpleData>
+		<SimpleData name="PXO_ID">EMERALSTINSO_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0044.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.85635098735449</SimpleData>
+		<SimpleData name="LATITUDE">43.248490599992415</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.856354486286961,43.248499091717143</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>AUGUSTA STREET AT WALNUT STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">29</SimpleData>
+		<SimpleData name="PXO_ID">AUGUSTWALNUT_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0051.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86504849587604</SimpleData>
+		<SimpleData name="LATITUDE">43.25064029546</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.865051997751507,43.250648787160081</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT WINDWOOD DRIVE - SOUTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">30</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEWINDWO_SL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0017.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81495984051064</SimpleData>
+		<SimpleData name="LATITUDE">43.116648888200395</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814963314896033,43.116657358460074</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT WINDWOOD DRIVE - EAST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">31</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEWINDWO_EL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0019.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81457628455281</SimpleData>
+		<SimpleData name="LATITUDE">43.11677811077509</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814579758827961,43.116786581075488</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT WINDWOOD DRIVE - NORTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">32</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEWINDWO_NL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0018.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8147854973057</SimpleData>
+		<SimpleData name="LATITUDE">43.11703263888129</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814788971669046,43.117041109217247</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>FALL FAIR WAY AT PUMPKIN PASS - SOUTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">33</SimpleData>
+		<SimpleData name="PXO_ID">FALLFAPUMPKI_SL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0023.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81084533287452</SimpleData>
+		<SimpleData name="LATITUDE">43.12574859967534</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.810848806743465,43.125757071742996</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>FALL FAIR WAY AT PUMPKIN PASS - NORTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">34</SimpleData>
+		<SimpleData name="PXO_ID">FALLFAPUMPKI_NL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0021.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81031693700595</SimpleData>
+		<SimpleData name="LATITUDE">43.12609509712818</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.810320410737589,43.126103569281916</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>FALL FAIR WAY AT PUMPKIN PASS - WEST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">35</SimpleData>
+		<SimpleData name="PXO_ID">FALLFAPUMPKI_WL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0022.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81083192153363</SimpleData>
+		<SimpleData name="LATITUDE">43.1260833518611</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.810835395427247,43.126091823988858</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>GRAY ROAD AT JASPER DRIVE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">36</SimpleData>
+		<SimpleData name="PXO_ID">GRAYJASPER_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0077.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Stoney Creek</SimpleData>
+		<SimpleData name="LONGITUDE">-79.74684783807315</SimpleData>
+		<SimpleData name="LATITUDE">43.21660675127445</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.746851299532921,43.216615242438813</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MOHAWK COLLEGE TRANSIT HUB - HSR NORTHBOUND- 1 - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">37</SimpleData>
+		<SimpleData name="PXO_ID">MOHCOLHSR1_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0028.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88393817713968</SimpleData>
+		<SimpleData name="LATITUDE">43.2377765362189</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.883941683877296,43.237785024761251</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>JAMES STREET AT MULBERRY STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">38</SimpleData>
+		<SimpleData name="PXO_ID">JAMESMULBER_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0049.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86684510329285</SimpleData>
+		<SimpleData name="LATITUDE">43.26172630205032</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.866848606704679,43.261734795628833</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MOHAWK COLLEGE TRANSIT HUB - HSR - NORTHBOUND- 2 - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">39</SimpleData>
+		<SimpleData name="PXO_ID">MOHCOLHSR2_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0029.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88363230187083</SimpleData>
+		<SimpleData name="LATITUDE">43.238146484349436</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.883635808543801,43.238154972971543</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MOHAWK COLLEGE TRANSIT HUB - HSR - WESTBOUND- 3 - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">40</SimpleData>
+		<SimpleData name="PXO_ID">MOHCOLHSR3_WB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0030.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88417717456579</SimpleData>
+		<SimpleData name="LATITUDE">43.23854594238712</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.884180681446168,43.238554431054567</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HERKIMER STREET AT QUEEN STREET - SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">41</SimpleData>
+		<SimpleData name="PXO_ID">HERKIMQUEEN_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0035.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88212641736938</SimpleData>
+		<SimpleData name="LATITUDE">43.25113177497675</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.882129924698049,43.251140265967827</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BARTON STREET AT BRUNSWICK STREET - WESTBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">62</SimpleData>
+		<SimpleData name="PXO_ID">BARTONBRUNSW_WB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0062.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.77674151859785</SimpleData>
+		<SimpleData name="LATITUDE">43.24246115980419</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.776744991777065,43.242469654164104</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LOCKE STREET AT STANLEY AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">63</SimpleData>
+		<SimpleData name="PXO_ID">LOCKESTANLE_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0038.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88728094561067</SimpleData>
+		<SimpleData name="LATITUDE">43.25156860273424</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.887284454610281,43.25157709356229</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE / FALL FAIR WAY AT BINBROOK ROAD - EAST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">64</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEBINBRO_EL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0039.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81213185084931</SimpleData>
+		<SimpleData name="LATITUDE">43.122541021259316</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.812135324848441,43.122549492697296</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>RAYMOND ROAD AT WHITTINGTON DRIVE - EAST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">65</SimpleData>
+		<SimpleData name="PXO_ID">RAYMONWHITTI_EL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0073.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.93558355270517</SimpleData>
+		<SimpleData name="LATITUDE">43.21420212115811</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.935587073740692,43.21421060311733</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HERKIMER STREET AT HESS STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">66</SimpleData>
+		<SimpleData name="PXO_ID">HERKIMHESS_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0047.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88076239482464</SimpleData>
+		<SimpleData name="LATITUDE">43.25083257191218</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.880765901695071,43.250841062913906</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>DALIA AVENUE AT UPPER SHERMAN AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">67</SimpleData>
+		<SimpleData name="PXO_ID">DALIAUPSHERM_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0045.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86098046624689</SimpleData>
+		<SimpleData name="LATITUDE">43.200986390190245</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.860983962510389,43.20099487328369</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>STINSON STREET AT WELLINGTON STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">68</SimpleData>
+		<SimpleData name="PXO_ID">STINSOWELLIN_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0050.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86096378759159</SimpleData>
+		<SimpleData name="LATITUDE">43.24971385702256</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.860967288092155,43.249722348748968</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>CAROLINE STREET AT CHARLTON AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">69</SimpleData>
+		<SimpleData name="PXO_ID">CAROLICHARLT_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0048.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87872697223507</SimpleData>
+		<SimpleData name="LATITUDE">43.25135298146469</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.878730478506114,43.251361472653429</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>COOTES AT MAIN - WESTBOUND RIGHT TURN SLOT - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">70</SimpleData>
+		<SimpleData name="PXO_ID">COOTESMAIN_WBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0068.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.92207091221277</SimpleData>
+		<SimpleData name="LATITUDE">43.25811587327908</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.922074432803939,43.258124363642253</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HUNTER STREET AT PARK STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">71</SimpleData>
+		<SimpleData name="PXO_ID">HUNTERPARK_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0046.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87324365490541</SimpleData>
+		<SimpleData name="LATITUDE">43.25436919716302</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.873247159702501,43.254377689141229</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT MAGNIFICENT WAY - WEST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">72</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEMAGNIF_WL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0053.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8143884290846</SimpleData>
+		<SimpleData name="LATITUDE">43.11860247213365</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814391903457832,43.118610942767042</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT MAGNIFICENT WAY - NORTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">73</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEMAGNIF_NL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0071.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81410678714767</SimpleData>
+		<SimpleData name="LATITUDE">43.118685459661314</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814110261438913,43.1186939303225</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT MAGNIFICENT WAY - SOUTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">74</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEMAGNIF_SL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0072.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8142127261273</SimpleData>
+		<SimpleData name="LATITUDE">43.11840254803274</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.814216200427651,43.11841101863876</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>RAYMOND ROAD AT WHITTINGTON DRIVE - WEST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">75</SimpleData>
+		<SimpleData name="PXO_ID">RAYMONWHITTI_WL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0074.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.93616808737849</SimpleData>
+		<SimpleData name="LATITUDE">43.21410563419785</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.936171608590655,43.214114116112697</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>RAYMOND ROAD AT WHITTINGTON DRIVE - NORTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">76</SimpleData>
+		<SimpleData name="PXO_ID">RAYMONWHITTI_NL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0075.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.93593404943205</SimpleData>
+		<SimpleData name="LATITUDE">43.21435492406233</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.935937570591861,43.214363406032263</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>RAYMOND ROAD AT WHITTINGTON DRIVE - SOUTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">77</SimpleData>
+		<SimpleData name="PXO_ID">RAYMONWHITTI_SL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0076.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.93582732382299</SimpleData>
+		<SimpleData name="LATITUDE">43.213956853983895</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.935830844914292,43.21396533588829</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE AT WINDWOOD DRIVE - WEST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">42</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEWINDWO_WL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0020.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81508894071942</SimpleData>
+		<SimpleData name="LATITUDE">43.11690738910178</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.81509241516801,43.116915859401416</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE / FALL FAIR WAY AT BINBROOK ROAD - WEST LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">43</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEBINBRO_WL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0040.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81286298585665</SimpleData>
+		<SimpleData name="LATITUDE">43.122731729060526</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.812866460103677,43.122740200498541</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE / FALL FAIR WAY AT BINBROOK ROAD - NORTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">44</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEBINBRO_NL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0041.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81238901838323</SimpleData>
+		<SimpleData name="LATITUDE">43.1228875938529</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.812392492493672,43.122896065340569</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BRADLEY AVENUE / FALL FAIR WAY AT BINBROOK ROAD - SOUTH LEG - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">45</SimpleData>
+		<SimpleData name="PXO_ID">BRADLEBINBRO_SL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0042.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.81264423169209</SimpleData>
+		<SimpleData name="LATITUDE">43.122362974025876</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.812647705838017,43.122371445408469</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HUNTER AT PEARL - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">46</SimpleData>
+		<SimpleData name="PXO_ID">HUNTERPEARL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0067.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8836274374244</SimpleData>
+		<SimpleData name="LATITUDE">43.256395557204826</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.883630945687955,43.256404049057515</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HERKIMER STREET AT QUEEN STREET - SOUTHBOUND LEFT TURN SLOT - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">47</SimpleData>
+		<SimpleData name="PXO_ID">HERKIMQUEEN_SBL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0036.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.88197016482185</SimpleData>
+		<SimpleData name="LATITUDE">43.25117476916197</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.881973672104749,43.251183260167949</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>CENTENNIAL PARKWAY AT QUEENSTON ROAD - SOUTHBOUND RIGHT TURN SLOT PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">48</SimpleData>
+		<SimpleData name="PXO_ID">CENTENQUEENS_SBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0069.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Stoney Creek</SimpleData>
+		<SimpleData name="LONGITUDE">-79.76437490114846</SimpleData>
+		<SimpleData name="LATITUDE">43.228285085679815</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.764378369176626,43.228293578101649</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>FIFTY ROAD AT SOUTH SERVICE ROAD - SOUTHBOUND RIGHT TURN SLOT - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">49</SimpleData>
+		<SimpleData name="PXO_ID">FIFTYSSR_SBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0070.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Stoney Creek</SimpleData>
+		<SimpleData name="LONGITUDE">-79.63821711867784</SimpleData>
+		<SimpleData name="LATITUDE">43.21440913780874</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.63822054550414,43.214417633611241</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>CENTRE ROAD AT MEANDER CLOSE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">50</SimpleData>
+		<SimpleData name="PXO_ID">CENTREMEANDE_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0054.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Flamborough</SimpleData>
+		<SimpleData name="LONGITUDE">-79.97612973356134</SimpleData>
+		<SimpleData name="LATITUDE">43.39107055951053</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.97613328296093,43.391079070815429</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>KING STREET - 45 METRES WEST OF BOND STREET - EASTBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">51</SimpleData>
+		<SimpleData name="PXO_ID">BONDKING_EB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0055.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.9023039820074</SimpleData>
+		<SimpleData name="LATITUDE">43.26328209742217</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.902307496788907,43.263290589622073</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>KING STREET - 45 METRES WEST OF BOND STREET - WESTBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">52</SimpleData>
+		<SimpleData name="PXO_ID">BONDKING_WB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0058.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.90228188060962</SimpleData>
+		<SimpleData name="LATITUDE">43.2633690828833</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.902285395391729,43.263377575099632</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>DUNDURN STREET - 20 METRES SOUTH OF STANLEY AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">53</SimpleData>
+		<SimpleData name="PXO_ID">DUNDUSTANL_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0056.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.89211518568891</SimpleData>
+		<SimpleData name="LATITUDE">43.252484194751226</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.892118696299818,43.252492685515875</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MALL ROAD - 100 METRES SOUTH OF MOHAWK ROAD - NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">54</SimpleData>
+		<SimpleData name="PXO_ID">MALLMOHAW_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0057.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86061091347203</SimpleData>
+		<SimpleData name="LATITUDE">43.22124326166618</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.860614411380567,43.221251748366797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MALL ROAD - 100 METRES SOUTH OF MOHAWK ROAD - SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">55</SimpleData>
+		<SimpleData name="PXO_ID">MALLMOHAW_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0059.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86070002050766</SimpleData>
+		<SimpleData name="LATITUDE">43.2213215808935</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.860703518451231,43.221330067603859</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>OLD ANCASTER ROAD AT BRANTFORD RAIL TRAIL - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">56</SimpleData>
+		<SimpleData name="PXO_ID">OLDANCBRANTRT_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0066.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Dundas</SimpleData>
+		<SimpleData name="LONGITUDE">-79.95481285585772</SimpleData>
+		<SimpleData name="LATITUDE">43.25790484402751</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.954816386799436,43.257913332823662</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BAY STREET AT JACKSON STREET - NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">57</SimpleData>
+		<SimpleData name="PXO_ID">BAYJACKSO_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0063.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87476252784076</SimpleData>
+		<SimpleData name="LATITUDE">43.255692246350456</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.874766033234479,43.255700738492003</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BAY STREET AT JACKSON STREET - NORTHBOUND RIGHT TURN SLOT- PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">58</SimpleData>
+		<SimpleData name="PXO_ID">BAYJACKSO_NBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0064.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87468361196603</SimpleData>
+		<SimpleData name="LATITUDE">43.25551707381026</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.874687117319468,43.255525565924501</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BAY STREET AT JACKSON STREET - WESTBOUND RIGHT TURN SLOT- PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">59</SimpleData>
+		<SimpleData name="PXO_ID">BAYJACKSO_WBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0065.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8745792989212</SimpleData>
+		<SimpleData name="LATITUDE">43.25565899517099</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.874582804253976,43.255667487315193</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HUGHSON STREET AT HUNTER STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">60</SimpleData>
+		<SimpleData name="PXO_ID">HUGHSOHUNTER_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0060.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.86897275000206</SimpleData>
+		<SimpleData name="LATITUDE">43.25340658343816</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.868976253362078,43.253415075445041</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>BARTON STREET AT BRUNSWICK STREET - EASTBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">61</SimpleData>
+		<SimpleData name="PXO_ID">BARTONBRUNSW_EB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0061.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Proposed</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.77681739692727</SimpleData>
+		<SimpleData name="LATITUDE">43.24228471524353</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.776820870115216,43.242293209568651</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LINC TRAIL AT UPPER SHERMAN AVENUE NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">1</SimpleData>
+		<SimpleData name="PXO_ID">LINCUPSHER_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0002.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.85653088510111</SimpleData>
+		<SimpleData name="LATITUDE">43.21073893828065</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.856534380803438,43.210747423309797</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>DUNHAM DRIVE / TODD STREET AT WILSON STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">2</SimpleData>
+		<SimpleData name="PXO_ID">DUNHAMWILSON_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0004.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.99118637863603</SimpleData>
+		<SimpleData name="LATITUDE">43.21523582031109</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.991189917360785,43.21524429985655</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>AVON DRIVE AT GOVERNOR'S ROAD - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">3</SimpleData>
+		<SimpleData name="PXO_ID">AVONGOVERN_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0005.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Dundas</SimpleData>
+		<SimpleData name="LONGITUDE">-79.962804216414</SimpleData>
+		<SimpleData name="LATITUDE">43.261336162749664</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.962807750186528,43.261344651779062</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>GARTH STREET AT 160 SOUTH OF STONE CHURCH ROAD NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">4</SimpleData>
+		<SimpleData name="PXO_ID">GARTHSSTONE_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0006.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.90902728770511</SimpleData>
+		<SimpleData name="LATITUDE">43.21455651094811</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.909030800363922,43.214564994208644</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>GARTH STREET AT 160 SOUTH OF STONE CHURCH ROAD SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">5</SimpleData>
+		<SimpleData name="PXO_ID">GARTHSSTONE_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0007.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.90909702480808</SimpleData>
+		<SimpleData name="LATITUDE">43.214652294813035</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.909100537497309,43.214660778087293</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LIMERIDGE ROAD EAST AT RAIL TRAIL - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">6</SimpleData>
+		<SimpleData name="PXO_ID">LIMERIRAILTR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0008.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.82268700818145</SimpleData>
+		<SimpleData name="LATITUDE">43.20447683271815</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.822690492619628,43.204485318211034</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>CONCESSION STREET AT EAST 27TH STREET - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">7</SimpleData>
+		<SimpleData name="PXO_ID">CONCESEAST27_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0009.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.84670617914529</SimpleData>
+		<SimpleData name="LATITUDE">43.23964093577784</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.846709674250903,43.239649426384688</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MACNAB HSR TERMINAL SOUTH - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">8</SimpleData>
+		<SimpleData name="PXO_ID">MACNABHSR_SO_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0010.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87111732682742</SimpleData>
+		<SimpleData name="LATITUDE">43.256078509385226</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.871120831100001,43.256087001765081</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>MACNAB HSR TERMINAL NORTH - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">9</SimpleData>
+		<SimpleData name="PXO_ID">MACNABHSR_NO_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0011.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.87084642346032</SimpleData>
+		<SimpleData name="LATITUDE">43.2563793400193</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.870849927673333,43.256387832465016</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HOLLYBUSH DRIVE AT NORTH OF PENTLAND DRIVE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">10</SimpleData>
+		<SimpleData name="PXO_ID">HOLLYBPENTLA_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0012.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Flamborough</SimpleData>
+		<SimpleData name="LONGITUDE">-79.91248233537152</SimpleData>
+		<SimpleData name="LATITUDE">43.322443896596276</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.912485858557957,43.322452398778061</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>GREENHILL AVENUE AT MOUNT ALBION ROAD TURN SLOT NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">11</SimpleData>
+		<SimpleData name="PXO_ID">GREENHMTALBI_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0013.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.79558366597067</SimpleData>
+		<SimpleData name="LATITUDE">43.215102887010794</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.795587142744822,43.215111375646785</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>WINTERBERRY DRIVE AT 195 NORTH OF HIGHLAND ROAD - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">12</SimpleData>
+		<SimpleData name="PXO_ID">WINTERHIGHLA_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0014.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Stoney Creek</SimpleData>
+		<SimpleData name="LONGITUDE">-79.80540055091566</SimpleData>
+		<SimpleData name="LATITUDE">43.190239118497786</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.805404028642485,43.190247602268542</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LONGWOOD ROAD AT MARION AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">13</SimpleData>
+		<SimpleData name="PXO_ID">LONGWOMARION_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0015.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.9019358985126</SimpleData>
+		<SimpleData name="LATITUDE">43.260321251601184</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.901939412918807,43.260329743294442</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>GUEST STREET AT VINTON ROAD - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">14</SimpleData>
+		<SimpleData name="PXO_ID">GUESTVINTON_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">D</SimpleData>
+		<SimpleData name="LOC_ID">PX0016.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Ancaster</SimpleData>
+		<SimpleData name="LONGITUDE">-79.939046934117</SimpleData>
+		<SimpleData name="LATITUDE">43.213058179619175</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.939050456149118,43.213066661214192</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>ATHERLEY DRIVE / ROWNTREE DRIVE AT UPPER SHERMAN AVENUE - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">15</SimpleData>
+		<SimpleData name="PXO_ID">ATHERLUPSHER_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">B</SimpleData>
+		<SimpleData name="LOC_ID">PX0001.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.85792246601461</SimpleData>
+		<SimpleData name="LATITUDE">43.20774989021508</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.85792596189772,43.207758374649671</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LINC TRAIL AT UPPER SHERMAN AVENUE SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">16</SimpleData>
+		<SimpleData name="PXO_ID">LINCUPSHER_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0003.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.85663012764144</SimpleData>
+		<SimpleData name="LATITUDE">43.210850367722415</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.85663362338488,43.210858852766691</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>HERKIMER STREET AT QUEEN STREET - NORTHBOUND RIGHT TURN SLOT - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">17</SimpleData>
+		<SimpleData name="PXO_ID">HERKIMQUEEN_NBR_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0037.00</SimpleData>
+		<SimpleData name="WARD">W0</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Hamilton</SimpleData>
+		<SimpleData name="LONGITUDE">-79.8820222494148</SimpleData>
+		<SimpleData name="LATITUDE">43.25106348991649</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.882025756704493,43.251071980900342</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>REGIONAL ROAD 56 AT 185 SOUTH OF VIKING DRIVE - SOUTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">18</SimpleData>
+		<SimpleData name="PXO_ID">REGRD56VIKING_SB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0025.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.80623382693554</SimpleData>
+		<SimpleData name="LATITUDE">43.11685333573577</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.80623729857642,43.116861806436162</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>REGIONAL ROAD 56 AT 185 SOUTH OF VIKING DRIVE - NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">19</SimpleData>
+		<SimpleData name="PXO_ID">REGRD56VIKING_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0024.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.80617704170112</SimpleData>
+		<SimpleData name="LATITUDE">43.116783386657005</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.806180513317983,43.116791857347586</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<description>LIBRARY LANE AT REGIONAL ROAD 56 - NORTHBOUND - PXO</description>
+	<ExtendedData><SchemaData schemaUrl="#OGRGeoJSON">
+		<SimpleData name="OBJECTID">20</SimpleData>
+		<SimpleData name="PXO_ID">LIBRARREGRD56_NB_PXO</SimpleData>
+		<SimpleData name="PXO_TYPE">C</SimpleData>
+		<SimpleData name="LOC_ID">PX0026.00</SimpleData>
+		<SimpleData name="WARD">W1</SimpleData>
+		<SimpleData name="STATUS">Operational</SimpleData>
+		<SimpleData name="COMMUNITY">Glanbrook</SimpleData>
+		<SimpleData name="LONGITUDE">-79.80404237574689</SimpleData>
+		<SimpleData name="LATITUDE">43.12202222136521</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-79.804045847140372,43.122030693085904</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
