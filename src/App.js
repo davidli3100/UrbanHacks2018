@@ -170,8 +170,12 @@ const MyMapComponent = compose(
     ref={props.onMapWillMount}
     // center={this.props.center}
   >
-      <KmlLayer
+      {/* <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kml"
+      options={{ preserveViewport: true }}
+    /> */}
+      <KmlLayer
+      url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/pedestrian.kml"
       options={{ preserveViewport: true }}
     />
     {console.log(props.directions)}
