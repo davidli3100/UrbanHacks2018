@@ -111,19 +111,19 @@ const MyMapComponent = compose(
   withGoogleMap,
   lifecycle({
     componentWillMount(){
-      const refs = MAP ? { GoogleMap } : {};
-      this.setState({
-        onMapWillMount: ref => {
-          refs.map = ref;
-          const currentMap = refs.map;
-          (window).googleMapsObject = currentMap.context[MAP];
-          //load the GeoJson to the map
-          refreshDataFromGeoJson(currentMap);
-          //set props.currentMap 
-          this.setState({currentMap: currentMap});
-        }
-      })
-      console.log(custState)
+      // const refs = MAP ? { GoogleMap } : {};
+      // this.setState({
+      //   onMapWillMount: ref => {
+      //     refs.map = ref;
+      //     const currentMap = refs.map;
+      //     (window).googleMapsObject = currentMap.context[MAP];
+      //     //load the GeoJson to the map
+      //     refreshDataFromGeoJson(currentMap);
+      //     //set props.currentMap 
+      //     this.setState({currentMap: currentMap});
+      //   }
+      // })
+      // console.log(custState)
     },
     componentDidMount() {
       console.log(this.props.origin, this.props.destination)
