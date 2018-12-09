@@ -6,7 +6,7 @@ import composeState from 'compose-state';
 
 import './App.css';
 import { watchFile, close } from 'fs';
-import { MAP } from 'react-google-maps/lib/constants';
+import { MAP, KML_LAYER } from 'react-google-maps/lib/constants';
 
 const {
   withScriptjs,
@@ -172,11 +172,12 @@ const MyMapComponent = compose(
   >
       <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kml"
-      options={{ preserveViewport: true }}
     />
       <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/pedestrian.kml"
-      options={{ preserveViewport: true }}
+    />
+
+    <KML_LAYER url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/stop.kml"
     />
     {console.log(props.directions)}
     {props.directions && <DirectionsRenderer directions={props.directions} />}
