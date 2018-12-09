@@ -37,7 +37,7 @@ var routeSegs = [];
 var closeLights = [];
 var closeLightsGeo;
 var closeLightsKml;
-var stopLights = require('./stop_signs')
+var stopLights = require('./Traffic_Signals')
 var custState = {};
 
 /**
@@ -177,7 +177,7 @@ const MyMapComponent = compose(
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/pedestrian.kml"
     />
 
-    <KML_LAYER url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/stop.kml"
+    <KmlLayer url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/stop.kml"
     />
     {console.log(props.directions)}
     {props.directions && <DirectionsRenderer directions={props.directions} />}
