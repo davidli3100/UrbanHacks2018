@@ -19,6 +19,9 @@ const {
 const { compose, withProps, lifecycle } = require("recompose");
 // var firebase = require('firebase');
 
+// const {googleDrive} = require('googleapis');
+
+const axios = require('axios')
 const google = window.google;
 const fetch = require('node-fetch');
 const routing = require("./routing")
@@ -34,7 +37,7 @@ var routeSegs = [];
 var closeLights = [];
 var closeLightsGeo;
 var closeLightsKml;
-var stopLights = require('./Traffic_Signals.json')
+var stopLights = require('./Pedestrian_Crossovers')
 var custState = {};
 
 /**
@@ -355,7 +358,7 @@ class App extends Component {
     for(var i =0; i < stopLights.features.length; i++) {
       for(var j = 0; j < routeSegs.length; j++) {
         var foobar = distToSegment([stopLights.features[i].properties.LATITUDE, stopLights.features[i].properties.LONGITUDE], [routeSegs[j].lat1, routeSegs[j].lng1], [routeSegs[j].lat2, routeSegs[j].lng2])
-          if(foobar < 0.0001) {
+          if(foobar < 0.003) {
             // console.log(foobar)
             closeLights.push({
               lat: stopLights.features[i].properties.LATITUDE,
@@ -381,6 +384,27 @@ class App extends Component {
     // trafficKmlRef.put(fi).then(function(snapshot) {
     //   console.log('Uploaded traffic!');
     // });
+    // axios.get('https://developer.nps.gov/api/v0/parks?parkCode=yell', {headers: 'Authorization: AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE' })
+
+
+  //   const drive = googleDrive.drive({
+  //     version: 'v3',
+  //     auth: 'AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE'
+
+  //   });
+  //   async function main() {
+  //   const res = await drive.files.create({
+  //     requestBody: {
+  //       name: 'Traffic',
+  //       mimeType: 'text/plain'
+  //     },
+  //     media: {
+  //       mimeType: 'application/vnd.google-earth.kml+xml',
+  //       body: closeLightsKml
+  //     }
+  //   });
+  // }
+  // main()
     console.log(closeLightsKml);
     console.log(closeLightsGeo);
     console.log(closeLights)
