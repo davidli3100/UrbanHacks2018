@@ -167,6 +167,10 @@ const MyMapComponent = compose(
     ref={props.onMapWillMount}
     // center={this.props.center}
   >
+      <KmlLayer
+      url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kml"
+      options={{ preserveViewport: true }}
+    />
     {console.log(props.directions)}
     {props.directions && <DirectionsRenderer directions={props.directions} />}
     {props.isMarkerShown && <Marker position={currentPos} onClick={props.onMarkerClick} />}
@@ -182,7 +186,7 @@ const refreshDataGeo = function (currentMap) {
       newData.setMap(currentMap.context[MAP]);
 }
 
-const refreshDataFromGeoJson = function (currentMap) {
+const refreshDataFromGeoJson=function (currentMap) {
   if (!currentMap) {
     return;
   }
@@ -351,7 +355,7 @@ class App extends Component {
     for(var i =0; i < stopLights.features.length; i++) {
       for(var j = 0; j < routeSegs.length; j++) {
         var foobar = distToSegment([stopLights.features[i].properties.LATITUDE, stopLights.features[i].properties.LONGITUDE], [routeSegs[j].lat1, routeSegs[j].lng1], [routeSegs[j].lat2, routeSegs[j].lng2])
-          if(foobar < 0.001) {
+          if(foobar < 0.0001) {
             // console.log(foobar)
             closeLights.push({
               lat: stopLights.features[i].properties.LATITUDE,
