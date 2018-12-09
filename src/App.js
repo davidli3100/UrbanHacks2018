@@ -36,10 +36,9 @@ const MyMapComponent = compose(
   lifecycle({
     componentDidMount() {
       const DirectionsService = new google.maps.DirectionsService();
-      new google.maps.
       DirectionsService.route({
         origin: new google.maps.LatLng(currentPos.lat, currentPos.lng),
-        destination: new google.mapsznc.LatLng(41.8525800, -87.6514100),
+        destination: new google.maps.LatLng(41.8525800, -87.6514100),
         travelMode: google.maps.TravelMode.DRIVING,
       }, (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -112,6 +111,10 @@ class RouteSelector extends Component {
 class App extends Component {
   state = {
     isMarkerShown: false,
+  }
+
+  pathfinder() {
+    
   }
 
   componentWillMount() {
