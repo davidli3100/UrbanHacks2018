@@ -171,7 +171,7 @@ const MyMapComponent = compose(
     // center={this.props.center}
   >
       <KmlLayer
-      url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kml"
+      url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kmz"
     />
       <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/pedestrian.kml"
