@@ -9,25 +9,30 @@ const {
   withGoogleMap,
   GoogleMap,
   DirectionsRenderer,
-  Marker
+  Marker,
+  KmlLayer
 } = require("react-google-maps");
 const { compose, withProps, lifecycle } = require("recompose");
 const google = window.google;
 const fetch = require('node-fetch');
 const routing = require("./routing")
 const https = require('https')
+var polyline = require('polyline')
 
 var resRoute;
+var routeSegs = {};
 var stopLights = require('./Traffic_Signals.json')
 
 /**
  * manually get and parse geojson data 
  **/
 
-  
+var time = 0;
+var timePrev = 0;
+ 
 var currentPos = {
-  lat: 0,
-  lng: 0
+  lat: 43.2557,
+  lng: -79.8711
 };
 
 /**
@@ -61,45 +66,66 @@ function distToSegmentSquared (p, v, w) {
 function distToSegment (p, v, w) {
   return Math.sqrt(distToSegmentSquared(p, v, w));
 }
-
 console.log(distToSegment([0,0], [5,1], [-2,1]))
 
-const MyMapComponent = compose(
+var MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div style={{ height: `100vh` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
   withGoogleMap,
   lifecycle({
     componentDidMount() {
-      const DirectionsService = new google.maps.DirectionsService();
+      console.log(this.props.origin, this.props.destination)
+      var DirectionsService = new google.maps.DirectionsService();
       DirectionsService.route({
-        origin: this.props.origin,
-        destination: this.props.destination,//new google.maps.LatLng(41.8525800, -87.6514100),
+        origin: new google.maps.LatLng(currentPos.lat, currentPos.lng),
+        destination: new google.maps.LatLng(43.2609, -79.9192),
         travelMode: google.maps.TravelMode.DRIVING,
       }, (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
           this.setState({
             directions: result,            
           });
-          console.log(result)
-          resRoute = result;
+          console.log(result);
+          resRoute = polyline.decode(result.routes[0].overview_polyline);
+          console.log(resRoute);
+          for(var i in resRoute) {
+            routeSegs.push({
+              lat1: resRoute[i][0],
+              lng1: resRoute[i][1],
+              lat2: resRoute[i+1][0],
+              lng2: resRoute[i+1][1]
+            }
+            )
+          }
+          console.log(routeSegs);
         } else {
           console.error(`error fetching directions ${result}`);
         }
       });
+    }, 
+    withProps(nextProps) {
+      if(this.props !== nextProps) {
+        this.forceUpdate();
+        console.log('update forced')
+      }
     }
   })
-)((props) =>
+)((props) => 
   <GoogleMap
     defaultZoom={8} 
     defaultCenter={currentPos}
     center={currentPos}
     // center={this.props.center}
   >
+  <KmlLayer
+      url="https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.kml"
+      options={{ preserveViewport: true }}
+    />
     {console.log(props.directions)}
     {props.directions && <DirectionsRenderer directions={props.directions} />}
     {props.isMarkerShown && <Marker position={currentPos} onClick={props.onMarkerClick} />}
@@ -157,17 +183,17 @@ class App extends Component {
   state = {
     isMarkerShown: false,
     navigationProps: {
-      
+      origin: new google.maps.LatLng()
     }
   }
   
-  pathfinder() {
-    resRoute.routes[0].overview_path.forEach(element => {
-      var shit = routing.pair(element.lat, element.lng);
-      var shit = distToSegment() //new function, takes 3 points
+  // pathfinder() {
+  //   resRoute.routes[0].overview_path.forEach(element => {
+  //     var shit = routing.pair(element.lat, element.lng);
+  //     var shit = distToSegment() //new function, takes 3 points
       
-    });
-  }
+  //   });
+  // }
 
   componentWillMount() {
     this.getGeoLocation()
@@ -200,6 +226,8 @@ class App extends Component {
         }
       });
       console.log(this.state)
+      timePrev = time;
+      time++;
     })
 
   }
@@ -212,7 +240,6 @@ class App extends Component {
     .then(res => res.json()).then(data => {
      console.log(data); 
     this.getDestinationGeocode(data, this.destinationNode.value)
-    this.forceUpdate()
     }     
     )
     }
@@ -253,8 +280,8 @@ class App extends Component {
     console.log(stopLights);
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '75vh', posMarker}}>
-        <div style={{ width: '50vw'}}>
+      <div style={{ height: '100vh', posMarker}}>
+        {/* <div style={{ width: '50vw'}}>
            <div className="selector-container" >
           <form id="address-form" onSubmit={this.handleSubmit}>
               <div className="starting-container">
@@ -273,8 +300,8 @@ class App extends Component {
                   <button type="submit" className="submit-btn">Navigate</button>    
               </div>
           </form>
-          </div>
-        </div>        
+          </div> 
+    </div>   */}     
         <MyMapComponent
         origin={this.state.navigationProps.origin}
         destination={this.state.navigationProps.destination}
