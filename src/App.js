@@ -18,8 +18,7 @@ var resRoute;
 var stopLights;
 
 fetch('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.geojson')
-  .then(response => console.log(response))
-
+  .then(response => console.log(parser.toArray(response.json)))
 var currentPos = {
   lat: 0,
   lng: 0
