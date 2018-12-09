@@ -3,6 +3,7 @@ import math from 'mathjs'
 import parser from 'geojson-tools';
 // import logo from './logo.svg';
 import './App.css';
+import { watchFile } from 'fs';
 const {
   withScriptjs,
   withGoogleMap,
@@ -12,33 +13,17 @@ const {
 } = require("react-google-maps");
 const { compose, withProps, lifecycle } = require("recompose");
 const google = window.google;
+const fetch = require('node-fetch');
 const routing = require("./routing")
 const https = require('https')
 
 var resRoute;
-var stopLights;
+var stopLights = require('./Traffic_Signals.json')
 
-// fetch('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.geojson')
-//   .then(response => console.log(response))
+/**
+ * manually get and parse geojson data 
+ **/
 
-https.get('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.getjson', (resp) => {
-  let data = ' ';
-
-  //chunk of data received
-  resp.on('data', (chunk) => {
-    data += chunk
-  });
-
-  //all chunks receive print out data
-  resp.on('end', () => {
-    console.log(JSON.parse(data));
-  });
-
-  //catch errors
-
-}).on("error", (err) => {
-  console.log('Error: ' + err.message)
-})
   
 var currentPos = {
   lat: 0,
@@ -48,7 +33,7 @@ var currentPos = {
 /**
  * icon pics
  * traffic lights: https://image.flaticon.com/icons/svg/1167/1167993.svg
- */
+ **/
 
 
 function sqr (x) {
@@ -92,8 +77,8 @@ const MyMapComponent = compose(
     componentDidMount() {
       const DirectionsService = new google.maps.DirectionsService();
       DirectionsService.route({
-        origin: new google.maps.LatLng(currentPos.lat, currentPos.lng),
-        destination: new google.maps.LatLng(41.8525800, -87.6514100),
+        origin: this.props.origin,
+        destination: this.props.destination,//new google.maps.LatLng(41.8525800, -87.6514100),
         travelMode: google.maps.TravelMode.DRIVING,
       }, (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -121,57 +106,65 @@ const MyMapComponent = compose(
   </GoogleMap>
 );
 
-class RouteSelector extends Component {
-  constructor(props) {
-    super(props)
-    this.state= {
-
-    }
-  }
-  handleSubmit = (event) => {
-      event.preventDefault()
-      console.log(this.startingNode.value)
-      console.log(this.destinationNode.value)
-      this.setState({
-          navigationProps: {
-              start: this.startingNode.value,
-              destination: this.destinationNode.value
-          }
-      })     
-  }
-  render() {
-      return (
-          <div className="selector-container" >
-          <form id="address-form" onSubmit={this.handleSubmit}>
-              <div className="starting-container">
-                  <span className="label col-sm-4">Start</span>
-                  <div className="destination-div col-sm-8">
-                  <input ref={node => (this.startingNode = node)} name="startingLocation" type="text"className="starting-field location-field" placeholder="Choose a starting point"></input>
-                  </div>          
-              </div>
-              <div className="destination-container">
-                  <span className="label col-sm-4">Destination</span>
-                  <div className="destination-div col-sm-8">
-                  <input ref={node => (this.destinationNode = node)} name="destinationLocation" type="text"className="destination-field location-field" placeholder="Choose a destination"></input>
-                  </div>
-              </div>
-              <div className="submit-btn-container">
-                  <button type="submit" className="submit-btn">Navigate</button>    
-              </div>
-          </form>
-          </div>
-      )
-  }
+function comparePoints() {
+  var bestShit;  
 }
+
+// class RouteSelector extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.state= {
+
+//     }
+//   }
+//   handleSubmit = (event) => {
+//       event.preventDefault()
+//       console.log(this.startingNode.value)
+//       console.log(this.destinationNode.value)
+//       this.setState({
+//           navigationProps: {
+//               start: this.startingNode.value,
+//               destination: this.destinationNode.value
+//           }
+//       })     
+//   }
+//   render() {
+//       return (
+//           <div className="selector-container" >
+//           <form id="address-form" onSubmit={this.handleSubmit}>
+//               <div className="starting-container">
+//                   <span className="label col-sm-4">Start</span>
+//                   <div className="destination-div col-sm-8">
+//                   <input ref={node => (this.startingNode = node)} name="startingLocation" type="text"className="starting-field location-field" placeholder="Choose a starting point"></input>
+//                   </div>          
+//               </div>
+//               <div className="destination-container">
+//                   <span className="label col-sm-4">Destination</span>
+//                   <div className="destination-div col-sm-8">
+//                   <input ref={node => (this.destinationNode = node)} name="destinationLocation" type="text"className="destination-field location-field" placeholder="Choose a destination"></input>
+//                   </div>
+//               </div>
+//               <div className="submit-btn-container">
+//                   <button type="submit" className="submit-btn">Navigate</button>    
+//               </div>
+//           </form>
+//           </div>
+//       )
+//   }
+// }
   
 class App extends Component {
   state = {
     isMarkerShown: false,
+    navigationProps: {
+      
+    }
   }
   
   pathfinder() {
     resRoute.routes[0].overview_path.forEach(element => {
       var shit = routing.pair(element.lat, element.lng);
+      var shit = distToSegment() //new function, takes 3 points
       
     });
   }
@@ -190,18 +183,39 @@ class App extends Component {
       this.setState({ isMarkerShown: true })
     }, 3000)
   }
+
+  getDestinationGeocode(originCoding, destinationVal) {
+    console.log('getting')
+    fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(destinationVal) + '&key=AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE')
+    .then(res => res.json()).then(result => {
+      console.log(result);
+      var startLat = originCoding.results[0].geometry.location.lat
+      var startLng = originCoding.results[0].geometry.location.lng
+      var destinationLat = result.results[0].geometry.location.lat
+      var destinationLng = result.results[0].geometry.location.lng
+      this.setState({
+        navigationProps: {
+          origin: new google.maps.LatLng(startLat,startLng),
+          destination: new google.maps.LatLng(destinationLat, destinationLng)
+        }
+      });
+      console.log(this.state)
+    })
+
+  }
  
   handleSubmit = (event) => {
     event.preventDefault()
     console.log(this.startingNode.value)
     console.log(this.destinationNode.value)
-    this.setState({
-        navigationProps: {
-            start: this.startingNode.value,
-            destination: this.destinationNode.value
-        }
-    })     
-}
+    fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURIComponent(this.startingNode.value) + '&key=AIzaSyDwSW_09He1CaVw65Btpn0p4VKrLMCZibE')
+    .then(res => res.json()).then(data => {
+     console.log(data); 
+    this.getDestinationGeocode(data, this.destinationNode.value)
+    this.forceUpdate()
+    }     
+    )
+    }
 
   handleMarkerClick = () => {
     this.setState({ isMarkerShown: false })
@@ -231,6 +245,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state)
     const posMarker = {
       position: 'absolute',
       transform: 'translate(-50%, -50%)'
@@ -261,6 +276,8 @@ class App extends Component {
           </div>
         </div>        
         <MyMapComponent
+        origin={this.state.navigationProps.origin}
+        destination={this.state.navigationProps.destination}
         isMarkerShown={true}
         onMarkerClick={this}
       />
