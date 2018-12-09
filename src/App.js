@@ -13,12 +13,33 @@ const {
 const { compose, withProps, lifecycle } = require("recompose");
 const google = window.google;
 const routing = require("./routing")
+const https = require('https')
 
 var resRoute;
 var stopLights;
 
-fetch('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.geojson')
-  .then(response => console.log(parser.toArray(response.json)))
+// fetch('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.geojson')
+//   .then(response => console.log(response))
+
+https.get('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.getjson', (resp) => {
+  let data = ' ';
+
+  //chunk of data received
+  resp.on('data', (chunk) => {
+    data += chunk
+  });
+
+  //all chunks receive print out data
+  resp.on('end', () => {
+    console.log(JSON.parse(data));
+  });
+
+  //catch errors
+
+}).on("error", (err) => {
+  console.log('Error: ' + err.message)
+})
+  
 var currentPos = {
   lat: 0,
   lng: 0
