@@ -37,7 +37,7 @@ var routeSegs = [];
 var closeLights = [];
 var closeLightsGeo;
 var closeLightsKml;
-var stopLights = require('./Pedestrian_Crossovers')
+var stopLights = require('./stop_signs')
 var custState = {};
 
 /**
@@ -170,10 +170,10 @@ const MyMapComponent = compose(
     ref={props.onMapWillMount}
     // center={this.props.center}
   >
-      {/* <KmlLayer
+      <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/traffic.kml"
       options={{ preserveViewport: true }}
-    /> */}
+    />
       <KmlLayer
       url="https://raw.githubusercontent.com/davidli3100/UrbanHacks2018/master/src/pedestrian.kml"
       options={{ preserveViewport: true }}
@@ -362,7 +362,7 @@ class App extends Component {
     for(var i =0; i < stopLights.features.length; i++) {
       for(var j = 0; j < routeSegs.length; j++) {
         var foobar = distToSegment([stopLights.features[i].properties.LATITUDE, stopLights.features[i].properties.LONGITUDE], [routeSegs[j].lat1, routeSegs[j].lng1], [routeSegs[j].lat2, routeSegs[j].lng2])
-          if(foobar < 0.003) {
+          if(foobar < 0.0002) {
             // console.log(foobar)
             closeLights.push({
               lat: stopLights.features[i].properties.LATITUDE,
