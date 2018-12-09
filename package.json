@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "geojson-tools": "^0.2.2",
     "google-maps-react": "^2.0.2",
     "mathjs": "^5.3.1",
     "react": "^16.6.3",

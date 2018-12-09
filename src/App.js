@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import math from 'mathjs'
+import parser from 'geojson-tools';
 // import logo from './logo.svg';
 import './App.css';
 const {
@@ -14,11 +15,10 @@ const google = window.google;
 const routing = require("./routing")
 
 var resRoute;
+var stopLights;
 
-function loadJSON () {
-
-}
-
+fetch('https://opendata.arcgis.com/datasets/196cf427d97140a0a7746ff9ff0a4850_4.geojson')
+  .then(response => console.log(response))
 
 var currentPos = {
   lat: 0,
@@ -215,6 +215,7 @@ class App extends Component {
       position: 'absolute',
       transform: 'translate(-50%, -50%)'
     }
+    console.log(stopLights);
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: '75vh', posMarker}}>
